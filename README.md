@@ -41,6 +41,7 @@
 - Angular Language Service
 - Angular v6 snippets (John Papa)
 - angular2-inline (Nate Wallace)
+- phpfmt - PHP formatter (kokororin)
 - Auto Close Tag (Jun Han)
 - Auto Rename Tag (Jun Han)
 - Debugger for Chrome

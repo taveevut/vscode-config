@@ -5,13 +5,13 @@
   "editor.fontSize": 16,
   "window.zoomLevel": 0,
   "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Monokai",
-  "editor.fontFamily": "'Hack', Consolas, 'Courier New', monospace",
+  "workbench.colorTheme": "Twilight",
+  "editor.fontFamily": "'Fira Mono', Consolas, 'Courier New', monospace",
   "editor.tabSize": 2,
   // "editor.renderWhitespace": "all",
   "editor.lineHeight": 28,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "html.format.wrapLineLength": 0,
   "html.suggest.angular1": false,
   "html.suggest.ionic": false,
@@ -22,6 +22,16 @@
   // "terminal.integrated.cursorStyle": "line",
   "editor.fontLigatures": true,
   "explorer.openEditors.visible": 5,
+  // "phpfmt.php_bin": "\"C:\\Program Files\\php\\php.exe\""
+  "phpfmt.php_bin": "\"D:\\xampp\\php\\php.exe\"",
+  // Enable per-language
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+  },
+  "phpfmt.passes": ["SpaceAroundParentheses","AlignGroupDoubleArrow","ConvertOpenTagWithEcho","IndentTernaryConditions","MergeElseIf","NewLineBeforeReturn","RemoveSemicolonAfterCurly","ReplaceBooleanAndOr"],
+  "workbench.startupEditor": "newUntitledFile",
+  "vsicons.projectDetection.autoReload": true
 }
 ```
 

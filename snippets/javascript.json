@@ -12,11 +12,18 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"Print to console": {
+	"console.log": {
 		"prefix": "conl",
 		"body": [
 			"console.log($1);"
 		],
 		"description": "JavaScript - console.log()"
+	},
+	"event.preventDefault": {
+		"prefix": "event.prev",
+		"body": [
+			"event.preventDefault($1);"
+		],
+		"description": "JavaScript - event.preventDefault()"
 	},
 }

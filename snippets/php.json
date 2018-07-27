@@ -1,165 +1,172 @@
 {
-	// Place your snippets for php here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-	"CI - Query": {
-		"prefix": "db-query",
-		"body": [
-			"\\$this->db->query(\"SELECT * FROM ${1:tbname}\")->${2:result_array();}${3:row_array();}",
-		],
-		"description": "CI - Query"
-	},
-	"site_admin_redirect": {
-		"prefix": "site_admin_redirect",
-		"body": [
-			"site_admin_redirect('${1:url}');",
-		],
-		"description": "URL Helper - site_admin_redirect(url)"
-	},
-	"site_admin_url": {
-		"prefix": "site_admin_url",
-		"body": [
-			"site_admin_url('${1:url}');",
-		],
-		"description": "URL Helper - site_admin_url(url)"
-	},
-	"site_asset_ckeditor_article_url": {
-		"prefix": "site_asset_ckeditor_article_url",
-		"body": [
-			"site_asset_ckeditor_article_url('${1:url}');",
-		],
-		"description": "URL Helper - site_asset_ckeditor_article_url(url)"
-	},
-	"site_asset_ckeditor_url": {
-		"prefix": "site_asset_ckeditor_url",
-		"body": [
-			"site_asset_ckeditor_url('${1:url}');",
-		],
-		"description": "URL Helper - site_asset_ckeditor_url(url)"
-	},
-	"site_asset_css_url": {
-		"prefix": "site_asset_css_url",
-		"body": [
-			"site_asset_css_url('${1:url}');",
-		],
-		"description": "URL Helper - site_asset_css_url(url)"
-	},
-	"site_asset_js_url": {
-		"prefix": "site_asset_js_url",
-		"body": [
-			"site_asset_js_url('${1:url}');",
-		],
-		"description": "URL Helper - site_asset_js_url(url)"
-	},
-	"site_asset_url": {
-		"prefix": "site_asset_url",
-		"body": [
-			"site_asset_url('${1:url}');",
-		],
-		"description": "URL Helper - site_asset_url(url)"
-	},
-	"site_redirect": {
-		"prefix": "site_redirect",
-		"body": [
-			"site_redirect('${1:url}');",
-		],
-		"description": "URL Helper - site_redirect(url)"
-	},
-	"site_asset_img_url": {
-		"prefix": "site_asset_img_url",
-		"body": [
-			"site_asset_img_url('${1:url}');",
-		],
-		"description": "URL Helper - site_asset_img_url(url)"
-	},
-	"site_string_url": {
-		"prefix": "site_string_url",
-		"body": [
-			"site_string_url('${1:url}');",
-		],
-		"description": "URL Helper - site_string_url(url)"
-	},
-	"site_uploads_url": {
-		"prefix": "site_uploads_url",
-		"body": [
-			"site_uploads_url('${1:url}');",
-		],
-		"description": "URL Helper - site_uploads_url(url)"
-	},
-	"site_user_redirect": {
-		"prefix": "site_user_redirect",
-		"body": [
-			"site_user_redirect('${1:url}');",
-		],
-		"description": "URL Helper - site_user_redirect(url)"
-	},
-	"site_user_url": {
-		"prefix": "site_user_url",
-		"body": [
-			"site_user_url('${1:url}');",
-		],
-		"description": "URL Helper - site_user_url(url)"
-	},
-	"Pretty print_r": {
-		"prefix": "prev",
-		"body": [
-			"echo '<pre>';",
-			"print_r(${1:\\$_POST});",
-			"echo '</pre>';",
-			"exit();"
-		],
-		"description": "PHP: Pretty print_r"
-	},
-	"php-input": {
-		"prefix": "php-input",
-		"body": [
-			"\\$_POST = json_decode(file_get_contents(\"php: \//input\"),TRUE);"
-		],
-		"description": "PHP :: php://input"
-	},
-	"load_view": {
-		"prefix": "load_view",
-		"body": [
-			"load_view('${1:file_name}', \\$data);"
-		],
-		"description": "Tools Helper - load_view('filename')"
-	},
-	"load_view_admin": {
-		"prefix": "load_view_admin",
-		"body": [
-			"load_view_admin('${1:file_name}', \\$data);"
-		],
-		"description": "Tools Helper - load_view_admin('filename')"
-	},
-	"load_view_user": {
-		"prefix": "load_view_user",
-		"body": [
-			"load_view_user('${1:file_name}', \\$data);"
-		],
-		"description": "Tools Helper - load_view_user('filename')"
-	},
-	"Date NOW": {
-		"prefix": "NOW",
-		"body": [
-			"NOW();"
-		],
-		"description": "Date Helper - NOW()"
-	},
-	"Date CURDATE": {
-		"prefix": "CURDATE",
-		"body": [
-			"CURDATE();"
-		],
-		"description": "Date Helper - CURDATE()"
-	},
+  // Place your snippets for php here. Each snippet is defined under a snippet name and has a prefix, body and 
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "CI - Query": {
+    "prefix": "db-query",
+    "body": [
+      "\\$this->db->query(\"SELECT * FROM ${1:tbname}\")->${2:result_array();}${3:row_array();}",
+    ],
+    "description": "CI - Query"
+  },
+  "site_admin_redirect": {
+    "prefix": "site_admin_redirect",
+    "body": [
+      "site_admin_redirect('${1:url}');",
+    ],
+    "description": "URL Helper - site_admin_redirect(url)"
+  },
+  "site_admin_url": {
+    "prefix": "site_admin_url",
+    "body": [
+      "site_admin_url('${1:url}');",
+    ],
+    "description": "URL Helper - site_admin_url(url)"
+  },
+  "site_asset_ckeditor_article_url": {
+    "prefix": "site_asset_ckeditor_article_url",
+    "body": [
+      "site_asset_ckeditor_article_url('${1:url}');",
+    ],
+    "description": "URL Helper - site_asset_ckeditor_article_url(url)"
+  },
+  "site_asset_ckeditor_url": {
+    "prefix": "site_asset_ckeditor_url",
+    "body": [
+      "site_asset_ckeditor_url('${1:url}');",
+    ],
+    "description": "URL Helper - site_asset_ckeditor_url(url)"
+  },
+  "site_asset_css_url": {
+    "prefix": "site_asset_css_url",
+    "body": [
+      "site_asset_css_url('${1:url}');",
+    ],
+    "description": "URL Helper - site_asset_css_url(url)"
+  },
+  "site_asset_js_url": {
+    "prefix": "site_asset_js_url",
+    "body": [
+      "site_asset_js_url('${1:url}');",
+    ],
+    "description": "URL Helper - site_asset_js_url(url)"
+  },
+  "site_asset_url": {
+    "prefix": "site_asset_url",
+    "body": [
+      "site_asset_url('${1:url}');",
+    ],
+    "description": "URL Helper - site_asset_url(url)"
+  },
+  "site_redirect": {
+    "prefix": "site_redirect",
+    "body": [
+      "site_redirect('${1:url}');",
+    ],
+    "description": "URL Helper - site_redirect(url)"
+  },
+  "site_asset_img_url": {
+    "prefix": "site_asset_img_url",
+    "body": [
+      "site_asset_img_url('${1:url}');",
+    ],
+    "description": "URL Helper - site_asset_img_url(url)"
+  },
+  "site_string_url": {
+    "prefix": "site_string_url",
+    "body": [
+      "site_string_url('${1:url}');",
+    ],
+    "description": "URL Helper - site_string_url(url)"
+  },
+  "site_uploads_url": {
+    "prefix": "site_uploads_url",
+    "body": [
+      "site_uploads_url('${1:url}');",
+    ],
+    "description": "URL Helper - site_uploads_url(url)"
+  },
+  "site_wpsize_url": {
+    "prefix": "site_wpsize_url",
+    "body": [
+      "site_wpsize_url('${1:url}', '${2:w100|h100|c1x1|q60|bf00|p1}');",
+    ],
+    "description": "URL Helper - site_wpsize_url(url, event)"
+  },
+  "site_user_redirect": {
+    "prefix": "site_user_redirect",
+    "body": [
+      "site_user_redirect('${1:url}');",
+    ],
+    "description": "URL Helper - site_user_redirect(url)"
+  },
+  "site_user_url": {
+    "prefix": "site_user_url",
+    "body": [
+      "site_user_url('${1:url}');",
+    ],
+    "description": "URL Helper - site_user_url(url)"
+  },
+  "Pretty print_r": {
+    "prefix": "prev",
+    "body": [
+      "echo '<pre>';",
+      "print_r(${1:\\$_POST});",
+      "echo '</pre>';",
+      "exit();"
+    ],
+    "description": "PHP: Pretty print_r"
+  },
+  "php-input": {
+    "prefix": "php-input",
+    "body": [
+      "\\$_POST = json_decode(file_get_contents(\"php: \//input\"),TRUE);"
+    ],
+    "description": "PHP :: php://input"
+  },
+  "load_view": {
+    "prefix": "load_view",
+    "body": [
+      "load_view('${1:file_name}', \\$data);"
+    ],
+    "description": "Tools Helper - load_view('filename')"
+  },
+  "load_view_admin": {
+    "prefix": "load_view_admin",
+    "body": [
+      "load_view_admin('${1:file_name}', \\$data);"
+    ],
+    "description": "Tools Helper - load_view_admin('filename')"
+  },
+  "load_view_user": {
+    "prefix": "load_view_user",
+    "body": [
+      "load_view_user('${1:file_name}', \\$data);"
+    ],
+    "description": "Tools Helper - load_view_user('filename')"
+  },
+  "Date NOW": {
+    "prefix": "NOW",
+    "body": [
+      "NOW();"
+    ],
+    "description": "Date Helper - NOW()"
+  },
+  "Date CURDATE": {
+    "prefix": "CURDATE",
+    "body": [
+      "CURDATE();"
+    ],
+    "description": "Date Helper - CURDATE()"
+  },
 }

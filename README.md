@@ -2,50 +2,52 @@
 > ต้องไม่ลืมติดตั้งฟอนต์ [Fira Mono](https://fonts.google.com/specimen/Fira+Mono) 
 ```sh
 {
-  "editor.fontSize": 17,
-  "editor.cursorStyle": "line-thin",
-  "window.zoomLevel": 0,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Twilight",
-  "editor.fontFamily": "'Fira Mono',Source Code Pro, Consolas, 'Courier New', monospace",
-  "editor.tabSize": 2,
-  "editor.detectIndentation": false,
-  // "editor.renderWhitespace": "all",
-  "editor.lineHeight": 28,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "html.format.wrapLineLength": 0,
-  "html.suggest.angular1": false,
-  "html.suggest.ionic": false,
-  "editor.letterSpacing": 0,
-  // "terminal.integrated.fontSize": 15,
-  // "terminal.integrated.lineHeight": 1.5,
-  // "terminal.integrated.cursorBlinking": false,
-  // "terminal.integrated.cursorStyle": "line",
-  "editor.fontLigatures": true,
-  "explorer.openEditors.visible": 5,
-  "phpfmt.php_bin": "\"D:\\xampp\\php\\php.exe\"",
-  "phpfmt.psr2": false,
-  "phpfmt.indent_with_space": 2,
-  // Enable per-language
-  "[php]": {
-    "editor.formatOnSave": false,
-    "editor.tabSize": 2,
-  },
-  "phpfmt.passes": [
-    // "SpaceAroundParentheses",
-    "AlignGroupDoubleArrow",
-    "ConvertOpenTagWithEcho",
-    "IndentTernaryConditions",
-    "MergeElseIf",
-    "NewLineBeforeReturn",
-    "RemoveSemicolonAfterCurly",
-    "ReplaceBooleanAndOr"
-  ],
-  "workbench.startupEditor": "newUntitledFile",
-  "vsicons.projectDetection.autoReload": true
-}
-```
+   "editor.cursorStyle": "line-thin",
+   "window.zoomLevel": 0,
+   "editor.tabSize": 3,
+   "editor.detectIndentation": false,
+   // "editor.renderWhitespace": "all",
+   "editor.lineHeight": 28,
+   "editor.formatOnSave": true,
+   "html.format.wrapLineLength": 0,
+   "html.suggest.angular1": false,
+   "html.suggest.ionic": false,
+   "editor.letterSpacing": 0,
+   "editor.fontLigatures": true,
+   "explorer.openEditors.visible": 0,
+   "phpfmt.psr2": false,
+   "phpfmt.indent_with_space": 3,
+   "vscode-php-cs-fixer.fixOnSave": false,
+   "vscode-php-cs-fixer.rules": "@PSR1,@PSR2,@Symfony,-yoda_style",
+   // Enable per-language
+   "[php]": {
+      "editor.formatOnSave": false,
+      "editor.tabSize": 3
+   },
+   "phpfmt.passes": [
+      // "AllmanStyleBraces",
+      "SpaceAroundParentheses",
+      "AlignGroupDoubleArrow",
+      "ConvertOpenTagWithEcho",
+      "IndentTernaryConditions",
+      "MergeElseIf",
+      "NewLineBeforeReturn",
+      "RemoveSemicolonAfterCurly",
+      "ReplaceBooleanAndOr"
+   ],
+   "explorer.confirmDragAndDrop": false,
+   "workbench.editor.enablePreview": false,
+   "window.title": "${activeEditorMedium}${separator}${rootName} ${dirty}",
+   "editor.wordSeparators": "`~!@%^&*()=+-[{]}\\|;:'\",.<>/?",
+   "workbench.startupEditor": "newUntitledFile",
+   // "git.autoRepositoryDetection": false,
+   // "git.autorefresh": false,
+   // "git.detectSubmodules": false,
+   "files.autoSave": "off",
+   // "editor.minimap.enabled": false,
+   "editor.fontSize": 14,
+   "workbench.colorTheme": "Twilight"
+}```
 
 # Extensions สำหรับฉัน
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) (Jun Han)

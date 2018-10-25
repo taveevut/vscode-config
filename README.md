@@ -47,7 +47,8 @@
    // "editor.minimap.enabled": false,
    "editor.fontSize": 14,
    "workbench.colorTheme": "Twilight"
-}```
+}
+```
 
 # Extensions สำหรับฉัน
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) (Jun Han)

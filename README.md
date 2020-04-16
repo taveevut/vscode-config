@@ -50,7 +50,67 @@
     "editor.fontSize": 15,
     "breadcrumbs.enabled": false,
     "workbench.colorTheme": "Twilight",
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#d9dadb",
+        "activityBar.dropBackground": "#dbdde0",
+        "activityBar.foreground": "#333333",
+        "sideBar.background": "#ebedef",
+		"sideBar.foreground": "#333333",
+        "sideBarSectionHeader.background": "#ebedef",
+        "statusBar.background": "#414339",
+		"statusBar.debuggingBackground": "#75715E",
+		"statusBar.noFolderBackground": "#414339",
+        "statusBarItem.remoteBackground": "#AC6218",
+        "gitDecoration.addedResourceForeground": "#5e8019",
+		"gitDecoration.modifiedResourceForeground": "#377380",
+		"gitDecoration.deletedResourceForeground": "#991414",
+		"gitDecoration.untrackedResourceForeground": "#333333",
+		"gitDecoration.ignoredResourceForeground": "#9d999a",
+		"gitDecoration.conflictingResourceForeground": "#995b14",
+        "gitDecoration.submoduleResourceForeground": "#333333",
+		"list.highlightForeground": "#000000",
+		"list.hoverBackground": "#dbdde0",
+		"list.inactiveSelectionBackground": "#c7cbd1",
+    },
+    "editor.tokenColorCustomizations": {
+        "[Monokai]": {
+            "textMateRules": [
+                {
+                    "name": "Comment",
+                    "scope": "comment",
+                    "settings": {
+                        "fontStyle": "italic",
+                        "foreground": "#6b6b6b"
+                    }
+                },
+                // {
+                //     "name": "Function name",
+                //     "scope": "entity.name.function",
+                //     "settings": {
+                //         "fontStyle": "bold",
+                //         "foreground": "#a6e22e"
+                //     }
+                // },
+                // {
+                //     "name": "Function argument",
+                //     "scope": "variable.parameter",
+                //     "settings": {
+                //         "fontStyle": "",
+                //         "foreground": "#fd971f"
+                //     }
+                // },
+                // {
+                //     "name": "Class name",
+                //     "scope": "entity.name.type, entity.name.class",
+                //     "settings": {
+                //         "fontStyle": "bold",
+                //         "foreground": "#a6e22e"
+                //     }
+                // },
+            ],
+        }
+    },
 }
 ```
 

@@ -1,0 +1,35 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.editor.changeLanguageMode"
+    },
+    {
+        "key": "cmd+k m",
+        "command": "-workbench.action.editor.changeLanguageMode"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+y",
+        "command": "redo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+z",
+        "command": "-redo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+0",
+        "command": "editor.action.fontZoomReset"
+    }
+]

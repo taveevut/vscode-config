@@ -1,47 +1,144 @@
 {
-   "editor.cursorStyle": "line-thin",
-   "window.zoomLevel": 0,
-   "editor.tabSize": 3,
-   "editor.detectIndentation": false,
-   // "editor.renderWhitespace": "all",
-   "editor.lineHeight": 28,
-   "editor.formatOnSave": true,
-   "html.format.wrapLineLength": 0,
-   "html.suggest.angular1": false,
-   "html.suggest.ionic": false,
-   "editor.letterSpacing": 0,
-   "editor.fontLigatures": true,
-   "explorer.openEditors.visible": 0,
-   "phpfmt.psr2": false,
-   "phpfmt.indent_with_space": 3,
-   "vscode-php-cs-fixer.fixOnSave": false,
-   "vscode-php-cs-fixer.rules": "@PSR1,@PSR2,@Symfony,-yoda_style",
-   // Enable per-language
-   "[php]": {
-      "editor.formatOnSave": false,
-      "editor.tabSize": 3
-   },
-   "phpfmt.passes": [
-      // "AllmanStyleBraces",
-      "SpaceAroundParentheses",
-      "AlignGroupDoubleArrow",
-      "ConvertOpenTagWithEcho",
-      "IndentTernaryConditions",
-      "MergeElseIf",
-      "NewLineBeforeReturn",
-      "RemoveSemicolonAfterCurly",
-      "ReplaceBooleanAndOr"
-   ],
-   "explorer.confirmDragAndDrop": false,
-   "workbench.editor.enablePreview": false,
-   "window.title": "${activeEditorMedium}${separator}${rootName} ${dirty}",
-   "editor.wordSeparators": "`~!@%^&*()=+-[{]}\\|;:'\",.<>/?",
-   "workbench.startupEditor": "newUntitledFile",
-   // "git.autoRepositoryDetection": false,
-   // "git.autorefresh": false,
-   // "git.detectSubmodules": false,
-   "files.autoSave": "off",
-   // "editor.minimap.enabled": false,
-   "editor.fontSize": 14,
-   "workbench.colorTheme": "Twilight"
+    "window.zoomLevel": 0,
+    "window.title": "${activeEditorMedium}${separator}${rootName} ${dirty}",
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.wordSeparators": "`~!@%^&*()=+-[{]}\\|;:'\",.<>/?",
+    "editor.mouseWheelZoom": true,
+    "explorer.openEditors.visible": 0,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "off",
+    "breadcrumbs.enabled": false,
+    "phpfmt.psr2": true,
+    "phpfmt.indent_with_space": 4,
+    "vscode-php-cs-fixer.fixOnSave": false,
+    "vscode-php-cs-fixer.rules": "@PSR1,@PSR2,@Symfony,-yoda_style",
+    "[php]": {
+        "editor.formatOnSave": false,
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    },
+    "phpfmt.passes": [
+        // "AllmanStyleBraces",
+        // "LongArray",
+        "ShortArray",
+        // "SpaceAroundParentheses",
+        "StripExtraCommaInArray",
+        "AlignGroupDoubleArrow",
+        "ConvertOpenTagWithEcho",
+        "IndentTernaryConditions",
+        "MergeElseIf",
+        "NewLineBeforeReturn",
+        "RemoveSemicolonAfterCurly",
+        "ReplaceBooleanAndOr",
+        "SmartLnAfterCurlyOpen",
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+    },
+    "editor.minimap.enabled": false,
+    "git.ignoreLimitWarning": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": false,
+    },
+    // "editor.occurrencesHighlight": false,
+    // "editor.selectionHighlight": false,
+    "[scss]": {
+        "editor.defaultFormatter": "sasa.vscode-sass-format",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": false,
+    },
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": false,
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "html.format.wrapLineLength": 0,
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.tabSize": 4,
+    },
+    "terminal.integrated.fontSize": 14,
+    "[sass]": {
+        "editor.defaultFormatter": "syler.sass-indented",
+        "editor.tabSize": 4,
+    },
+    "[blade]": {},
+    "workbench.colorCustomizations": {
+        "editor.background": "#1e2225",
+    },
+    "editor.tokenColorCustomizations": {
+        // "textMateRules": [
+        //     {
+        //         "name": "Comment",
+        //         "scope": "comment",
+        //         "settings": {
+        //             "fontStyle": "italic",
+        //             "foreground": "#6e6e6e"
+        //         }
+        //     }
+        // ],
+        "[Twilight]": {
+            "textMateRules": [
+                {
+                    "name": "Comment",
+                    "scope": "comment",
+                    "settings": {
+                        "fontStyle": "italic",
+                        "foreground": "#6b6b6b"
+                    }
+                }
+            ],
+        },
+        "[Monokai]": {
+            "textMateRules": [
+                {
+                    "name": "Comment",
+                    "scope": "comment",
+                    "settings": {
+                        "fontStyle": "italic",
+                        "foreground": "#6b6b6b"
+                    }
+                },
+                // {
+                //     "name": "Function name",
+                //     "scope": "entity.name.function",
+                //     "settings": {
+                //         "fontStyle": "bold",
+                //         "foreground": "#a6e22e"
+                //     }
+                // },
+                // {
+                //     "name": "Function argument",
+                //     "scope": "variable.parameter",
+                //     "settings": {
+                //         "fontStyle": "",
+                //         "foreground": "#fd971f"
+                //     }
+                // },
+                // {
+                //     "name": "Class name",
+                //     "scope": "entity.name.type, entity.name.class",
+                //     "settings": {
+                //         "fontStyle": "bold",
+                //         "foreground": "#a6e22e"
+                //     }
+                // },
+            ],
+        }
+    },
+    "editor.fontSize": 14,
+    "editor.fontLigatures": false,
+    "workbench.iconTheme": "vs-nomo-dark",
+    "files.autoSaveDelay": 2000,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.tabSize": 4,
+    },
+    "workbench.colorTheme": "One Dark Pro"
 }

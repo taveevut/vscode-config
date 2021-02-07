@@ -1,12 +1,10 @@
 {
-    "window.zoomLevel": 0,
     "window.title": "${activeEditorMedium}${separator}${rootName} ${dirty}",
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
     "editor.wordSeparators": "`~!@%^&*()=+-[{]}\\|;:'\",.<>/?",
     "editor.mouseWheelZoom": true,
     "explorer.openEditors.visible": 0,
-    "explorer.confirmDragAndDrop": false,
     "files.autoSave": "off",
     "breadcrumbs.enabled": false,
     "phpfmt.psr2": true,
@@ -24,7 +22,7 @@
         "ShortArray",
         // "SpaceAroundParentheses",
         "StripExtraCommaInArray",
-        "AlignGroupDoubleArrow",
+        // "AlignGroupDoubleArrow",
         "ConvertOpenTagWithEcho",
         "IndentTernaryConditions",
         "MergeElseIf",
@@ -32,16 +30,17 @@
         "RemoveSemicolonAfterCurly",
         "ReplaceBooleanAndOr",
         "SmartLnAfterCurlyOpen",
+        "SortUseNameSpace"
     ],
     "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.defaultFormatter": "vscode.html-language-features",
         "editor.tabSize": 4,
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": false,
     },
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "git.ignoreLimitWarning": true,
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.tabSize": 4,
         "editor.formatOnSave": false,
     },
@@ -60,7 +59,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "html.format.wrapLineLength": 0,
     "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.tabSize": 4,
     },
     "terminal.integrated.fontSize": 14,
@@ -68,21 +67,24 @@
         "editor.defaultFormatter": "syler.sass-indented",
         "editor.tabSize": 4,
     },
-    "[blade]": {},
+    "[blade]": {
+        "editor.defaultFormatter": "onecentlin.laravel-blade"
+    },
+    "blade.format.enable": true,
     "workbench.colorCustomizations": {
-        "editor.background": "#1e2225",
+        // "editor.background": "#1b1b1a",
     },
     "editor.tokenColorCustomizations": {
-        // "textMateRules": [
-        //     {
-        //         "name": "Comment",
-        //         "scope": "comment",
-        //         "settings": {
-        //             "fontStyle": "italic",
-        //             "foreground": "#6e6e6e"
-        //         }
-        //     }
-        // ],
+        "textMateRules": [
+            {
+                "name": "Comment",
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#6e6e6e"
+                }
+            }
+        ],
         "[Twilight]": {
             "textMateRules": [
                 {
@@ -132,13 +134,56 @@
             ],
         }
     },
-    "editor.fontSize": 14,
     "editor.fontLigatures": false,
-    "workbench.iconTheme": "vs-nomo-dark",
     "files.autoSaveDelay": 2000,
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.tabSize": 4,
     },
-    "workbench.colorTheme": "One Dark Pro"
+    "namespaceResolver.autoSort": false,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "none",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": false,
+    },
+    "extensions.autoUpdate": false,
+    "workbench.iconTheme": "vs-nomo-dark",
+    "prettier.singleQuote": true,
+    "git.autofetch": true,
+    "extensions.ignoreRecommendations": true,
+    "files.exclude": {
+        "**/.gitkeep": true
+    },
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "editor.defaultFormatter": "HookyQR.beautify",
+    "prettier.proseWrap": "never",
+    "beautify.language": {
+        "js": {
+            "type": [
+                "javascript",
+                "json",
+                "jsonc"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautifyrc"
+            ]
+        },
+        "css": [
+            "css",
+            "less",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html",
+            "php",
+            "blade.php"
+        ]
+    },
+    "editor.fontSize": 14.5,
+    "window.zoomLevel": 0,
+    "editor.linkedEditing": true,
 }
